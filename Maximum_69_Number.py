@@ -1,13 +1,14 @@
 n=int(input())
-b=[]
+a=[]
 while(n):
-    rem=n%10
-    b.append(rem)
+    r=n%10
+    a.append(r)
     n//=10
-b=b[::-1]
-for i in range(len(b)):
-    if b[i]==6:
-        b[i]=9
+a=a[::-1]
+for i in range(len(a)):
+    if a[i]==6:
+        a[i]=9
         break
-for i in b:
+
+for i in a:
     print(i,end='')
