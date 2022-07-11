@@ -26,6 +26,12 @@ while(n<s):
             print(s)
             break
     s+=1
-        
-    
-    
+  
+
+
+
+
+
+
+
+
