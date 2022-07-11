@@ -1,23 +1,17 @@
-def selfi(a,b):
-    for n in range(a,b+1):
-        temp=n
-        co=0
-        c=0
-        if temp%10==0:
-            continue
-        else:
-            while(n):
-                co+=1
-                rem=n%10
-                if temp%rem==0:
-                    c+=1
-                n//=10
-            if co==c:
-                print(temp,end=' ')
 n=int(input())
 m=int(input())
-selfi(n,m)
-            
-                
-        
-        
+for i in range(n,m+1):
+    l=len(str(i))
+    c=0
+    temp=i
+    if i%10==0:
+        continue
+    else:
+        while(i):
+            r=i%10
+            i=i//10
+            if temp%r!=0:
+                break
+            c+=1
+        if l==c:
+            print(temp,end=' ')
