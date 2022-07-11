@@ -1,17 +1,15 @@
-def addd(n):
-    s=0
+def add(n):
+    sum=0
     while(n):
-        
         rem=n%10
-        s=s+rem
+        sum=sum+rem
         n//=10
-    return s
-        
-        
-        
+    if sum>9:
+        add(sum)
+    else:
+        print(sum)
+    
 n=int(input())
-while 1:
-    if addd(n)<=10:
-        print(addd(n))
-        break
-    n=addd(n)
+add(n)
+    
+        
