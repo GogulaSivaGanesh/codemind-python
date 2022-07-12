@@ -1,6 +1,6 @@
 n=int(input())
-b=int(n**0.5)
-if(b*b==n):
-    print('True')
+a=int(n**0.5)
+if n==a*a:
+    print(True)
 else:
-    print('False')
+    print(False)
