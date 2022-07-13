@@ -10,7 +10,7 @@ for i in range(n-1,0,-1):
     if pal(i):
         a=i
         break
-for j in range(n+1,100000):
+for j in range(n+1,n**n):
     if pal(j):
         b=j
         break
