@@ -10,7 +10,6 @@ def happy(n):
         print(True)
     else:
         print(False)
-     
 
 n=int(input())
 happy(n)
