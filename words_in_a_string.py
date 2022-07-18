@@ -1,6 +1,8 @@
 n=input()
-a=n.split()
-'''b=[]
-for i in a:
-    b.append(len(i))'''
-print(len(a))
+s=0
+#a=n.split()
+#b=[]
+for i in n:
+    if i==' ':
+        s+=1
+print(s+1)
