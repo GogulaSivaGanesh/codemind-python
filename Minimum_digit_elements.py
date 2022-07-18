@@ -1,8 +1,20 @@
 a=int(input())
-b=list(map(int,input().split()))
+d=list(map(int,input().split()))
+
+b=[]
+for i in d:
+    if i<0:
+        i=abs(i)
+    else:
+        if i not in b:
+            b.append(i)
+e=0
 c=len(str(min(b)))
-d=0
+
+
 for i in b:
-    if c==len(str(i)):
-        d+=1
-print(d)
+    if len(str(i))==c:
+        e+=1
+print(e)
+
+  
