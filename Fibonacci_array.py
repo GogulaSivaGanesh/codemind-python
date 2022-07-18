@@ -1,12 +1,13 @@
-
-b=int(input())
-a=list(map(int,input().split()))
-if b<=2:
+a=int(input())
+b=list(map(int,input().split()))
+c=0
+if a<=2:
     print('no')
 else:
-    for i in range(2,b-2):
-        if a[i]!=a[i-1]+a[i-2]:
-            print('no')
+    for i in range(2,a):
+        if b[i]!=b[i-1]+b[i-2]:
+            print("no")
             break
     else:
-        print('yes')
+        print("yes")
+  
