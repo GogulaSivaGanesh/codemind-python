@@ -1,0 +1,10 @@
+n=int(input())
+t=n
+s=0
+z=0
+while(len(str(t))!=z):
+    r=n%10
+    s+=r*(8**z)
+    n//=10
+    z+=1
+print(bin(s)[2:])
